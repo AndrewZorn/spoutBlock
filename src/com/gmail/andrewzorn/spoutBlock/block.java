@@ -38,7 +38,7 @@ public class block extends GenericCubeCustomBlock {
 
 	@Override
 	public boolean isProvidingPowerTo(World world, int x, int y, int z, BlockFace face) {
-		return false;
+		return true;
 	}
 
 	@Override

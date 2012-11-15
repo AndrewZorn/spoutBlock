@@ -10,52 +10,39 @@ import org.getspout.spoutapi.player.SpoutPlayer;
 
 public class testblock extends GenericCubeCustomBlock {
 	public testblock(Plugin plugin) {
-		super(plugin, "TestBlock",
-				"http://cdn.spout.org/img/icon/spout_16x16.png", 16);
+		super(plugin, "TestBlock", "http://cdn.spout.org/img/icon/spout_16x16.png", 16);
 	}
 
 	@Override
-	public void onNeighborBlockChange(World world, int x, int y, int z,
-			int changedId) {
-	}
+	public void onNeighborBlockChange(World world, int x, int y, int z, int changedId) {}
 
 	@Override
-	public void onBlockPlace(World world, int x, int y, int z) {
-	}
+	public void onBlockPlace(World world, int x, int y, int z) {}
 
 	@Override
-	public void onBlockPlace(World world, int x, int y, int z,
-			LivingEntity living) {
-	}
+	public void onBlockPlace(World world, int x, int y, int z, LivingEntity living) {}
 
 	@Override
-	public void onBlockDestroyed(World world, int x, int y, int z) {
-	}
+	public void onBlockDestroyed(World world, int x, int y, int z) {}
 
 	@Override
-	public boolean onBlockInteract(World world, int x, int y, int z,
-			SpoutPlayer player) {
+	public boolean onBlockInteract(World world, int x, int y, int z, SpoutPlayer player) {
 		return true;
 	}
 
 	@Override
-	public void onEntityMoveAt(World world, int x, int y, int z, Entity entity) {
-	}
+	public void onEntityMoveAt(World world, int x, int y, int z, Entity entity) {}
 
 	@Override
-	public void onBlockClicked(World world, int x, int y, int z,
-			SpoutPlayer player) {
-	}
+	public void onBlockClicked(World world, int x, int y, int z, SpoutPlayer player) {}
 
 	@Override
-	public boolean isProvidingPowerTo(World world, int x, int y, int z,
-			BlockFace face) {
+	public boolean isProvidingPowerTo(World world, int x, int y, int z, BlockFace face) {
 		return false;
 	}
 
 	@Override
-	public boolean isIndirectlyProvidingPowerTo(World world, int x, int y,
-			int z, BlockFace face) {
+	public boolean isIndirectlyProvidingPowerTo(World world, int x, int y, int z, BlockFace face) {
 		return false;
 	}
 }
